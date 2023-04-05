@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Gelasio&display=swap");
+
+* { box-sizing: border-box; }
+
+body,
+html { overflow-x: hidden; }
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 25px 0;
+
+  background-color: #964B00;
+  color: white;
+
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+}
+
+.bar_content {
+  display: block; /* Important to give the content a width */
+
+  width: 100%;
+  transform: translateX(100%); /* Animation start out of the screen */
+
+  /* Add the animation */
+  animation: move 25s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+
+/* Create the animation */
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+.poem{
+        background-image: url("textbg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 20%;
+        margin-block: 100px;
+        width: 60%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Great Vibes', cursive;
+}
+
+body{
+    background-image: url("wood.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
