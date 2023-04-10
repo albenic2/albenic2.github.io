@@ -6,7 +6,7 @@ body,
 html { overflow-x: hidden; }
 
 .bar {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 
@@ -48,6 +48,8 @@ html { overflow-x: hidden; }
         font-weight: bold;
         text-align: center;
         font-family: 'Great Vibes', cursive;
+        max-width: 100%;
+        height: auto;
 }
 
 body{
@@ -55,4 +57,3 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
